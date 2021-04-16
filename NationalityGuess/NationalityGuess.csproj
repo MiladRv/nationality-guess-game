@@ -8,4 +8,9 @@
     <PackageReference Include="bootstrap" Version="4.6.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\NationalityGuess.Infrastrucuture.Repository\NationalityGuess.Infrastrucuture.Repository.csproj" />
+    <ProjectReference Include="..\NationalityGuess.Domain\NationalityGuess.Domain.Model\NationalityGuess.Domain.Model.csproj" />
+  </ItemGroup>
+
 </Project>

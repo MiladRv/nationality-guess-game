@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace NationalityGuess.Domain.Model.Nationalitie
 {
-    public class Nationality
+    public class Nationality : DomainBase
     {
         private static List<Nationality> nationalities;
         public Nationality()
@@ -33,7 +33,6 @@ namespace NationalityGuess.Domain.Model.Nationalitie
             };
         }
 
-        public Guid Id { get; private set; }
         public string Name { get; private set; }
 
         public static List<Nationality> GetNationalities()

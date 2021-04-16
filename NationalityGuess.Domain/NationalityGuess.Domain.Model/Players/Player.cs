@@ -4,9 +4,8 @@ using System.Collections.Generic;
 
 namespace NationalityGuess.Domain.Model.Users
 {
-    public class Player
+    public class Player : DomainBase
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
         public int Score { get; set; }
         public List<PlayerGuess> Guesses { get; set; }
