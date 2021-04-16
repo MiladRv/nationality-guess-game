@@ -2,9 +2,8 @@
 
 namespace NationalityGuess.Domain.Model.UserGuesses
 {
-    public class PlayerGuess
+    public class PlayerGuess : DomainBase
     {
-        public Guid Id { get; set; }
         public Guid PlayerId { get; set; }
         public int SelectedOptionId { get; set; }
         public int CorrectOptionId { get; set; }
