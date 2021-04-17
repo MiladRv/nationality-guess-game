@@ -19,17 +19,6 @@ namespace NationalityGuess.Controllers
 
         public IActionResult Index()
         {
-            var nationalities = nationalityRepository.GetAll()
-                .ToList();
-
-            var str = string.Empty;
-
-            foreach (var nationality in nationalities)
-            {
-                str += $"id: {nationality.Id}, name: {nationality.Name}.";
-            }
-
-            _logger.LogInformation(str);
 
             return View();
         }
