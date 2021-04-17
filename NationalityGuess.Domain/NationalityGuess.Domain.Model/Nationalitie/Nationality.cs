@@ -5,39 +5,12 @@ namespace NationalityGuess.Domain.Model.Nationalitie
 {
     public class Nationality : DomainBase
     {
-        private static List<Nationality> nationalities;
-        public Nationality()
+        public Nationality(string name)
         {
-            nationalities = new List<Nationality>
-            {
-                new Nationality
-                {
-                   Id = Guid.NewGuid(),
-                   Name = "Japanese"
-                },
-                new Nationality
-                {
-                   Id = Guid.NewGuid(),
-                   Name = "Chinese"
-                },
-                new Nationality
-                {
-                   Id = Guid.NewGuid(),
-                   Name = "Korean"
-                },
-                new Nationality
-                {
-                   Id = Guid.NewGuid(),
-                   Name = "Thai"
-                }
-            };
+            Id = Guid.NewGuid();
+            Name = name;
         }
 
         public string Name { get; private set; }
-
-        public static List<Nationality> GetNationalities()
-        {
-            return nationalities;
-        }
     }
 }

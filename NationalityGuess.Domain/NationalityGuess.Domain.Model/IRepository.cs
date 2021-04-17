@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace NationalityGuess.Domain.Model
 {
-    public interface IRepository<TEntity> : IDisposable where TEntity : DomainBase
+    public interface IRepository<TEntity> where TEntity : DomainBase
     {
         IEnumerable<TEntity> GetAll();
         TEntity Get(Guid id);

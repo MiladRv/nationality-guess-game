@@ -1,21 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using NationalityGuess.Domain.Model.Nationalitie;
 using NationalityGuess.Models;
 using System.Diagnostics;
+using System.Linq;
 
 namespace NationalityGuess.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly INationalityRepository nationalityRepository;
+        public HomeController(ILogger<HomeController> logger, INationalityRepository nationalityRepository)
         {
             _logger = logger;
+            this.nationalityRepository = nationalityRepository;
         }
 
         public IActionResult Index()
         {
+
             return View();
         }
 
