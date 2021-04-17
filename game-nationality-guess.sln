@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NationalityGuess", "game-nationality-guess\NationalityGuess\NationalityGuess.csproj", "{940613B9-F0E4-4C03-9ADE-9C8AECDABB98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NationalityGuess.ApplicationService", "NationalityGuess.ApplicationService\NationalityGuess.ApplicationService\NationalityGuess.ApplicationService.csproj", "{0BC1BEED-741F-4079-AA22-C83920C46907}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NationalityGuess", "NationalityGuess\NationalityGuess.csproj", "{EFD6B746-2545-4C46-BF47-7353C8873195}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NationalityGuess.Domain.Model", "NationalityGuess.Domain\NationalityGuess.Domain.Model\NationalityGuess.Domain.Model.csproj", "{1AF2626D-5102-4B0D-8709-21DD825BC085}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NationalityGuess.Infrastructure", "NationalityGuess.Infrastructure\NationalityGuess.Infrastructure.csproj", "{E6F696EB-F934-4AD7-9FEC-AF90D6802E0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NationalityGuess.Infrastrucuture.Repository", "NationalityGuess.Infrastrucuture.Repository\NationalityGuess.Infrastrucuture.Repository.csproj", "{7693D93A-FD50-4B1A-B969-BBEF86204831}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{88B0CC28-0DEE-4E19-B632-7F46BCFD20EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D1BB7705-249C-4A33-8B0A-23181596DB86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastrucuture", "Infrastrucuture", "{59B26434-BADC-492E-AAD1-343B3133872C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{B80DF540-773D-4B52-B2F2-DAC7A6F25716}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +27,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{940613B9-F0E4-4C03-9ADE-9C8AECDABB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{940613B9-F0E4-4C03-9ADE-9C8AECDABB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{940613B9-F0E4-4C03-9ADE-9C8AECDABB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{940613B9-F0E4-4C03-9ADE-9C8AECDABB98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC1BEED-741F-4079-AA22-C83920C46907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC1BEED-741F-4079-AA22-C83920C46907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC1BEED-741F-4079-AA22-C83920C46907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC1BEED-741F-4079-AA22-C83920C46907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD6B746-2545-4C46-BF47-7353C8873195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD6B746-2545-4C46-BF47-7353C8873195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD6B746-2545-4C46-BF47-7353C8873195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD6B746-2545-4C46-BF47-7353C8873195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF2626D-5102-4B0D-8709-21DD825BC085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF2626D-5102-4B0D-8709-21DD825BC085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF2626D-5102-4B0D-8709-21DD825BC085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF2626D-5102-4B0D-8709-21DD825BC085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6F696EB-F934-4AD7-9FEC-AF90D6802E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6F696EB-F934-4AD7-9FEC-AF90D6802E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6F696EB-F934-4AD7-9FEC-AF90D6802E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6F696EB-F934-4AD7-9FEC-AF90D6802E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7693D93A-FD50-4B1A-B969-BBEF86204831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7693D93A-FD50-4B1A-B969-BBEF86204831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7693D93A-FD50-4B1A-B969-BBEF86204831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7693D93A-FD50-4B1A-B969-BBEF86204831}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BC1BEED-741F-4079-AA22-C83920C46907} = {88B0CC28-0DEE-4E19-B632-7F46BCFD20EF}
+		{EFD6B746-2545-4C46-BF47-7353C8873195} = {B80DF540-773D-4B52-B2F2-DAC7A6F25716}
+		{1AF2626D-5102-4B0D-8709-21DD825BC085} = {D1BB7705-249C-4A33-8B0A-23181596DB86}
+		{E6F696EB-F934-4AD7-9FEC-AF90D6802E0F} = {59B26434-BADC-492E-AAD1-343B3133872C}
+		{7693D93A-FD50-4B1A-B969-BBEF86204831} = {59B26434-BADC-492E-AAD1-343B3133872C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {183B8F8C-28E3-4DF2-A867-8ACBC3967270}
